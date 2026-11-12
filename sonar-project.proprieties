@@ -1,1 +1,18 @@
-sqp_74e83f9a1f395f2d18b48cb54dcf3ba06011b98d
+
+sonar.projectKey=SONAR_TOKEN
+sonar.projectName=SONAR_TOKEN
+
+# Serveur SonarQube installé avec Docker
+sonar.host.url=http://localhost:9000
+
+# Authentification
+sonar.token=sqp_74e83f9a1f395f2d18b48cb54dcf3ba06011b98d
+
+# Dossier source
+sonar.sources=src
+
+# Encodage
+sonar.sourceEncoding=UTF-8
+
+# Exclusions
+sonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
