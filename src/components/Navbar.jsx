@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectFavorites } from "../features/books/booksSlice";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const favorites = useSelector(selectFavorites);
@@ -9,9 +10,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="/logo.png"
+            src={logo}
             alt="AYUBOOKS logo"
-            className="h-12 w-auto object-contain sm:h-14"
+            className="h-14 w-14 object-contain sm:h-16 sm:w-16"
           />
         </div>
 
